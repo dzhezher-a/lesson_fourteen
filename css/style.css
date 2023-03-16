@@ -1,0 +1,222 @@
+:root {
+  --color-one: #ff4e50;
+  --color-two: #444444;
+  --color-three: #666666;
+}
+* {
+  max-width: 100%;
+}
+body,
+html {
+  font-family: "Montserrat", sans-serif;
+  max-width: 100%;
+}
+h2 {
+  color: var(--color-two);
+}
+header {
+  height: 100vh;
+}
+header .container {
+  margin-top: 5.5vh;
+}
+.bg-image-header {
+  background-image: url(../img/Background.png);
+  max-height: 100vh;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.btn-sign-up {
+  border: 2px solid var(--bs-white);
+  border-radius: 40px;
+}
+@media (min-width: 768px) {
+  header nav {
+    margin-left: 16.3vw;
+    margin-right: 20vw;
+  }
+}
+@media (max-width: 768px) {
+  header nav {
+    margin-left: 4.6vw;
+    margin-right: 4.9vw;
+  }
+}
+.intro-text {
+  margin-top: 19.9vh;
+}
+.intro-text p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+.intro-text a {
+  margin-top: 2.4vh;
+  background-color: var(--color-one);
+  border-radius: 40px;
+}
+@media (max-width: 427px) {
+  .navbar > .container {
+    justify-content: center;
+  }
+  header .container {
+    margin-top: 3vh;
+  }
+  .container > a {
+    margin-top: 15.7vh;
+  }
+  .intro-text {
+    margin-top: 3.4vh;
+  }
+  .intro-text h1 {
+    font-size: 1.9rem;
+  }
+  .intro-text p {
+    font-size: 1.1rem;
+  }
+}
+#main-content {
+  margin-top: 94px;
+  margin-bottom: 100px;
+}
+@media (max-width: 576px) {
+  #main-content {
+    margin-top: 27px;
+    margin-bottom: 40px;
+  }
+  .step-col img {
+    height: 15vh;
+  }
+}
+.step-col img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+  height: 44.5vh;
+}
+.step-col p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #e3e3e3;
+}
+.step-btn {
+  background-color: var(--color-one);
+  border: 0px solid var(--color-one);
+  border-radius: 40px;
+  width: 70px;
+  height: 20px;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+#partner {
+  margin-top: 10vh;
+  margin-left: 17.3vw;
+  margin-right: 17.3vw;
+}
+#partner h6 {
+  color: var(--color-two);
+}
+#partner p {
+  color: var(--color-three);
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+#partner .partner-btn {
+  border: 2px solid var(--color-one);
+  border-radius: 40px;
+  color: var(--color-one);
+  font-size: 14px;
+}
+#activity {
+  margin-top: 10vh;
+  margin-left: 17.3vw;
+  margin-right: 17.3vw;
+}
+#activity img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+}
+@media (max-width: 576px) {
+  #activity .card {
+    width: 300px;
+    height: 120px;
+    margin: auto;
+  }
+  #activity .card-img {
+    height: inherit;
+  }
+}
+#search {
+  margin-top: 10vh;
+  margin-left: 17.3vw;
+  margin-right: 17.3vw;
+}
+#search p {
+  color: var(--color-three);
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+#search .form-control {
+  margin-right: 10px;
+  width: 299px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+#search button {
+  border: 0 solid var(--color-one);
+  background-color: var(--color-one);
+  border-radius: 40px;
+  font-size: 14px;
+}
+@media (max-width: 576px) {
+  #search input {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+.footer {
+  margin-left: 17.3vw;
+  margin-right: 17.3vw;
+}
+footer a {
+  text-decoration: none;
+}
+footer h6 {
+  color: var(--color-two);
+  font-size: 14px;
+}
+footer ul {
+  list-style-type: none;
+}
+footer ul li a {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #999999;
+}
+hr.solid {
+  border-top: 2px solid var(--color-one);
+  width: 100vw;
+}
+.footer-logo {
+  color: var(--color-one);
+  font-size: 1rem;
+}
+@media (max-width: 768px) {
+  #partner,
+  #activity,
+  #search,
+  .footer {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+/* Короче, пару моментов:
+1) картинки говна, я хз почему они так шакалятся + не качалось с фигмы нормально. Когда сделал перекачивать у тебя было уже лень;
+2) инпут какого-то хуя растягивается даже если ограничивать его, хз как пофиксить, та и побыстрее хотелось закончить. Если сможешь - скажи почему, плес;
+3) футер не получилось выровнять какого-то хуя)))) хз почему */
